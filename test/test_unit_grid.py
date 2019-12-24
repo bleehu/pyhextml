@@ -3,4 +3,5 @@ sys.path.append(os.path.realpath(os.path.dirname(__file__)+"/.."))
 from src.model.grid import Grid as Grid
 
 def test_grid():
-    a = Grid()
+    a = Grid(5,5)
+    a.fill_blank()
