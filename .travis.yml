@@ -3,8 +3,9 @@ python:
   - "3.7.5"
 install:
   - pip install -r requirements.txt
+  - pip install pytest-cov
   - pip install coveralls
 script:
-  - pytest test
+  - pytest --cov test
 after_success:
   - coveralls
